@@ -1,0 +1,54 @@
+.agent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-lg) var(--spacing-2xl);
+}
+
+.agent-grid-item {
+    /* Start visible to ensure cards always show */
+    opacity: 1;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+    text-align: center;
+    min-height: 400px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.5;
+}
+
+.empty-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.empty-description {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .agent-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .agent-grid {
+        grid-template-columns: 1fr;
+        padding: 0 var(--spacing-md) var(--spacing-xl);
+        gap: var(--spacing-md);
+    }
+}
