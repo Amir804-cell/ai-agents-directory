@@ -431,4 +431,14 @@ export const agents: Agent[] = [
         url: 'https://tome.app',
         category: 'Productivity',
     },
+    {
+        id: '46',
+        name: 'agent-qa',
+        description: 'Test Web, Android and iOS apps in natural language, with persistent memory and validated self-improvement. Free local software; model-provider costs are separate.',
+        capabilities: ['App Testing', 'Web', 'Android', 'iOS', 'Persistent Memory', 'CLI', 'MCP'],
+        pricing: 'Free',
+        url: 'https://vostride.com',
+        category: 'Development',
+        featured: false,
+    },
 ];
